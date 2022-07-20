@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>set reminder</title>
+        <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <title>Registration page</title>
+    <link href="./../css files/setrem.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="mt-4 text-center">SET REMINDER</h1>
+        
+        <div class="row ">
+            <div class="col-3 dropdown "><div class=" banner ">
+                
+                <span class="mt-3"><img class="center mt-5"src="./../css files/icons8-pills-64.png"/></span>
+                <div class="title text-center pb-3">PILLS
+                    <div class="dropdown">
+                        <button class="btn right" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded=>
+                            <img src="./../css files/icons8-add-32.png"/>
+                        </button>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
+                          <li><div class="mb-3 register-div">
+                            <label for="exampleFormControlInput1" class="form-label">Pill name</label>
+                            <input type="text" class="form-control" name="pillname" id="pillname" onkeyup="pilldetails('pillname',this.value)" placeholder= "Pill name" required>
+                          </div></li>
+                          <li><div class="mb-3 register-div">
+                            <label for="exampleFormControlInput1" class="form-label">Start date</label>
+                            <input type="date" class="form-control" name="startdate" id="pillstartdate" onkeyup="pilldetails('pillstartdate',this.value)" placeholder="Start date" required>
+                          </div></li>
+                          <li><div class="mb-3 register-div">
+                            <label for="exampleFormControlInput1" class="form-label">Time</label>
+                            <input type="time" class="form-control" name="time" id="pilltime" onkeyup="pilldetails('pilltime',this.value)" placeholder="Time" required>
+                          </div></li>
+                          <!-- <li><div class="mb-3 register-div">
+                            <label for="exampleFormControlInput1" class="form-label">Pill count</label>
+                            <input type="number" class="form-control" name="count" id="pillcount" onkeyup="pilldetails('pillcount',this.value)" placeholder="Pill count" required>
+                          </div></li> -->
+                          <li><div class="add-button"><button type="button" onclick="pill()" class="btn btn-color ">Add</button></div></li>
+                        </ul>
+                      
+                      </div>
+                </div>
+           
+            </div>
+            </div>
+            <div class="col-3"><div class=" banner"><span class="mt-5"><img class="center mt-5"src="./../css files/icons8-syrup-64.png"/></span><div class="title text-center pb-3">SYRUP
+                <div class="dropdown">
+                    <button class="btn right" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded=>
+                        <img src="./../css files/icons8-add-32.png"/>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><div class="mb-3 register-div">
+                        <label for="exampleFormControlInput1" class="form-label">Syrup name</label>
+                        <input type="text" class="form-control" id="syrupname" onkeyup="syrupdetails('syrupname',this.value)" placeholder="Syrup name" required>
+                      </div></li>
+                      <li><div class="mb-3 register-div">
+                        <label for="exampleFormControlInput1" class="form-label">Start date</label>
+                        <input type="date" class="form-control" id="syrupstartdate" onkeyup="syrupdetails('syrupstartdate',this.value)" placeholder="Start date" required>
+                      </div></li>
+                      <li><div class="mb-3 register-div">
+                        <label for="exampleFormControlInput1" class="form-label">Time</label>
+                        <input type="time" class="form-control" id="syruptime" onkeyup="syrupdetails('syruptime',this.value)" placeholder="Time" required>
+                      </div></li>
+                      <!-- <li><div class="mb-3 register-div">
+                        <label for="exampleFormControlInput1" class="form-label">Syrup liter</label>
+                        <input type="number" class="form-control" id="syrupstock" onkeyup="syrupdetails('syrupstock',this.value)" placeholder="Syrup liter" required>
+                      </div></li> -->
+                      <li><div class="add-button"><button type="button" onclick="syrup()" class="btn btn-color ">Add</button></div></li>
+                    </ul>
+                  </div>
+            </div>
+    </div>
+            </div>
+            <div class="col-3"><div class=" banner"><span class="mt-5"><img class="center mt-5"src="./../css files/icons8-drops-64.png"/></span><div class="title text-center pb-3">DROPS
+                <div class="dropdown">
+                    <button class="btn right" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded=>
+                        <img src="./../css files/icons8-add-32.png"/>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><div class="mb-3 register-div">
+                        <label for="exampleFormControlInput1" class="form-label">Drop name</label>
+                        <input type="text" class="form-control" id="dropname" onkeyup="dropdetails('dropname',this.value)" placeholder="Drop name" required>
+                      </div></li>
+                      <li><div class="mb-3 register-div">
+                        <label for="exampleFormControlInput1" class="form-label">Start date</label>
+                        <input type="date" class="form-control" id="dropstartdate" onkeyup="dropdetails('dropstartdate',this.value)" placeholder="Start date" required>
+                      </div></li>
+                      <li><div class="mb-3 register-div">
+                        <label for="exampleFormControlInput1" class="form-label">Time</label>
+                        <input type="time" class="form-control" id="droptime" onkeyup="dropdetails('droptime',this.value)" placeholder="Time" required>
+                      </div></li>
+                      <!-- <li><div class="mb-3 register-div">
+                        <label for="exampleFormControlInput1" class="form-label">Drop liter</label>
+                        <input type="number" class="form-control" id="dropstock" onkeyup="dropdetails('dropstock',this.value)" placeholder="Drop liter" required>
+                      </div></li> -->
+                      <li><div class="add-button"><button type="button" onclick="drop()" class="btn btn-color">Add</button></div></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+            </div>
+            <div class="col-3"><div class=" banner"><span class="mt-5"><img class="center mt-5"src="./../css files/icons8-injection-64.png"/></span><div class="title text-center pb-3">INJECTION
+                <div class="dropdown">
+                    <button class="btn right" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded=>
+                        <img src="./../css files/icons8-add-32.png"/>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><div class="mb-3 register-div">
+                        <label for="exampleFormControlInput1" class="form-label">Injection name</label>
+                        <input type="text" class="form-control" id="injectionname" onkeyup="injectiondetails('injectionname',this.value)" placeholder="Injection name" required>
+                      </div></li>
+                      <li><div class="mb-3 register-div">
+                        <label for="exampleFormControlInput1" class="form-label">Start date</label>
+                        <input type="date" class="form-control" id="injectionstartdate" onkeyup="injectiondetails('injectionstartdate',this.value)" placeholder="Start date" required>
+                      </div></li>
+                      <li><div class="mb-3 register-div">
+                        <label for="exampleFormControlInput1" class="form-label">Time</label>
+                        <input type="time" class="form-control" id="injectiontime" onkeyup="injectiondetails('injectiontime',this.value)" placeholder="Time" required>
+                      </div></li>
+                      <!-- <li><div class="mb-3 register-div">
+                        <label for="exampleFormControlInput1" class="form-label">Injection count</label>
+                        <input type="number" class="form-control" id="injectionstock" onkeyup="injectiondetails('injectionstock',this.value)" placeholder="Injection count" required>
+                      </div></li> -->
+                      <li><div class="add-button"><button type="button" onclick="injection()" class="btn btn-color ">Add</button></div></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+        </div>
+            <!-- </div>
+              <div class="login-button mt-5 "><button   type="button" onclick="home()" class="btn btn-color home">Back to home page</button></div> -->
+            <!-- <div class="col-3">
+              <pre>
+                  <code id="code">
+          
+                  </code>
+              </pre>
+          </div> -->
+         </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./../med.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>
