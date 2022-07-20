@@ -1,0 +1,35 @@
+body{
+    background-image: linear-gradient(to right, 
+    #9156E9, 
+    #5664E9);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size:medium;
+    
+}
+.bg-register{
+    background: white;
+    box-shadow: 5px 5px 30px 10px rgba(14, 13, 13, 0.1);
+border-radius: 10px;
+}
+.register-div{
+    margin:0 20px;
+    
+}
+.register-button{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2{
+    color:#504e54;
+    font-size:25px;
+}
+.btn-color{
+    background-color: #9156E9;
+    color: white;
+}
+.btn-color:hover{
+    background-color: #7927f4;
+    color: white;
+}

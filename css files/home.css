@@ -1,0 +1,46 @@
+body{
+    
+        background-image: linear-gradient(to right, 
+        #9156E9, 
+        #5664E9);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size:medium;
+        
+    
+}
+h1{
+    color: white;
+}
+.line{
+    
+color:#9156E9;
+        
+}
+.banner{
+    background-color: aliceblue;
+    box-shadow: 5px 5px 30px 10px rgba(14, 13, 13, 0.1);
+border-radius: 10px;
+}
+.row{
+    margin: 0;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px 0;
+  }
+  .title{
+    font-size: 35px;
+  }
+ .banner:hover{
+    background-color: rgb(241, 243, 221);
+ }
+ a{
+    text-decoration: none;
+    color: black;
+ }
+ a:hover{
+    color: black;
+ }
